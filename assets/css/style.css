@@ -121,6 +121,17 @@ ul, ol {
     padding-right: 15px;
     overflow: hidden;
 }
+.main__standar{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 990px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
 .main__servicios section{
    margin-top: 10px;
    margin-bottom: 10px;
@@ -154,6 +165,7 @@ ul, ol {
     font-size: 35px;
     text-align: center;
     padding-bottom: 25px;
+    padding-top: 25px;
 }
 .cuadrado{
     width: 20px;
@@ -171,6 +183,9 @@ ul, ol {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+   
+}
+.bg-grey{
     background-image: linear-gradient(#eee, white);/*fondo con gradiente*/
 }
 .main__trabajos-titulo{
@@ -191,20 +206,28 @@ ul, ol {
     overflow: hidden;
 
 }
-.main__trabajos img:hover{
+img{
+    max-width: 100%;
+    height: auto;
+}
+.efecto img:hover{
     transform: scale(0.8);  /* No hace animacion solo gira */
+    
 }
 .main__proyectos-titulo{
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
+    overflow: hidden;
+    padding: 5px 0 5px 0;
 }
 .main__proyectos-descripcion{
     display: block;
     font-size: 12px;
     text-align: justify;
     line-height: 1.5;
+    overflow: hidden;
 }
 footer {
     width:100%
