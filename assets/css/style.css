@@ -142,12 +142,10 @@ ul, ol {
 /*Linea de tiempo animacion del texto bienvenidos*/
 @keyframes bienvenidos {
     0% {
-    -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     opacity: 0;
     }
     100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 100%;
     }
@@ -165,6 +163,7 @@ ul, ol {
     text-align: center;
     margin: 0 auto;
     transform: rotate(45deg);  /* No hace efecto */
+    
 }
 .main__trabajos{
     max-width: 990px;
@@ -172,6 +171,7 @@ ul, ol {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    background-image: linear-gradient(#eee, white);/*fondo con gradiente*/
 }
 .main__trabajos-titulo{
     font-size: 25px;
@@ -189,6 +189,10 @@ ul, ol {
     height: auto;
     clear: both;
     overflow: hidden;
+
+}
+.main__trabajos img:hover{
+    transform: scale(0.8);  /* No hace animacion solo gira */
 }
 .main__proyectos-titulo{
     display: block;
