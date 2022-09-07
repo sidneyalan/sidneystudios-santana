@@ -109,6 +109,7 @@ ul, ol {
     color: rgb(95, 10, 10);
     font-weight: bold;
     padding-top: 10px;
+    padding-left: 20px;
 }
 .main__servicios{
     display: grid;
