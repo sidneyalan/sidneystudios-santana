@@ -109,7 +109,7 @@ ul, ol {
     color: rgb(95, 10, 10);
     font-weight: bold;
     padding-top: 10px;
-    padding-left: 20px;
+    font-size: 28px;
 }
 .main__servicios{
     display: grid;
@@ -249,7 +249,7 @@ footer {
     color: rgb(61, 61, 61);
 }
 .footer__copy{
-    max-width: 990px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -602,12 +602,15 @@ td{
         display: none;
     }
     .footer__copy{
-        max-width: 990px;
+        max-width: 100%;
         display: flex;
         justify-content: center;
         padding-top: 50px;
         font-size: 12px;
         padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
     }
     .banner__contacto{
         max-width: 100%;
