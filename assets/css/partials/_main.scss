@@ -1,0 +1,219 @@
+.container{
+    max-width: 990px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    display:grid;
+    grid-template-columns: 1fr; 
+    overflow: hidden;
+}
+
+.main__container{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .header {
+        max-width: 990px;
+        margin: 0 auto;
+        position: sticky;
+        top: 0;
+        background-color: #f1f1f1;
+        padding: 30px 20px;
+        z-index: 1;
+        overflow: hidden; 
+    }
+
+    .header__content {
+        max-width: 990px;
+        display: flex;
+        justify-content:space-between;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    .logo{
+        width: auto;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    .header__content-navbar {
+        display: flex;
+
+        a{
+            color: #1a1a1a;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 10px !important;
+            border-radius: 5px;
+
+            :hover {
+                background-color: rgb(66, 66, 66);
+                color: white;
+            }
+        
+        }
+    }
+    .header__content-navbar--menu{
+        display: none;
+    }
+
+}
+
+
+.banner{
+    width:100%;
+    height: 400px;
+    overflow: hidden;
+    clear: both;
+    background-image: url("../../assets/img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__bienvenidos{
+    max-width: 900px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    overflow: hidden;
+    line-height: 1.5;
+    animation-name: bienvenidos;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+    h1{
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+}
+
+/*Linea de tiempo animacion del texto bienvenidos*/
+@keyframes bienvenidos {
+    0% {
+    transform: translateY(-100%);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 100%;
+    }
+    } 
+
+.cuadrado{
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    text-align: center;
+    margin: 0 auto;
+    transform: rotate(45deg);  /* No hace efecto */
+    
+}
+.main__trabajos{
+    max-width: 990px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.main__trabajos-titulo{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 25px;
+    clear: both;
+
+    h1{
+        font-size: 35px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+.bg-grey{
+    background-image: linear-gradient(#eee, white);/*fondo con gradiente*/
+}
+
+
+.main__trabajos-proyectos{
+    max-width: 100%;
+    height: auto;
+    clear: both;
+    overflow: hidden;
+
+    img{
+        max-width: 100%;
+        height: auto;
+        transition: all 0.5s ease
+    }
+
+    img:hover{
+        transform: scale(0.8);  /* No hace animacion solo gira */
+        
+    }
+
+}
+.efecto img:hover{
+    transform: scale(0.8);
+    
+}
+
+.main__proyectos-titulo{
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 5px 0 5px 0;
+
+    .main__proyectos-descripcion{
+        display: block;
+        font-size: 12px;
+        text-align: justify;
+        line-height: 1.5;
+        overflow: hidden;
+    }
+}
+
+.space{
+    padding: 50px !important;
+    margin: 100px !important;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/*ESTILOS A LA BARRA LATERAL DEL SITIO */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:rgb(66, 66, 66);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(34, 34, 34);
+  }
+
+  /*FIN ESTILOS A LA BARRA LATERAL DEL SITIO */

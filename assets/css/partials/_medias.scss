@@ -1,0 +1,198 @@
+/* medias queries*/
+
+@media (max-width:970px){
+    .header__content-navbar a{
+        font-size: 12px;
+        padding: 10px !important;
+   
+    } 
+    .header__content-navbar {
+        text-align: center;
+
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+    } 
+    .header__content-navbar a {
+        margin: 0 15px;
+        color: #1a1a1a;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 25px;
+        border-radius: 5px;
+    }
+    .header__content-navbar a:hover {
+        background-color: rgb(66, 66, 66);
+        color: white;
+    }
+    .main__trabajos-proyectos{
+        width: 220px;
+        padding: 10px;
+        height: auto;
+        clear: both;
+    }
+    .main__bienvenidos h1 {
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    .main__hosting{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .main__trabajos-titulo h1 {
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+    }
+    .banner{
+        width:100%;
+        height: 300px;
+    
+    }
+    .banner__contacto{
+        max-width: 100%;
+        height: 150px;
+    }
+    .banner__hosting{
+        max-width: 100%;
+        height: 150px;
+    }
+    .banner__nosotros{
+        max-width: 100%;
+        height: 150px;
+    }
+    .banner__servicios{
+        max-width: 100%;
+        height: 150px;
+    }
+   
+}
+
+@media (max-width:652px){
+
+    .main__trabajos-proyectos{
+        width: 200px;
+        height: auto;
+        clear: both;
+        overflow: hidden;
+    }
+    .main__hosting{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .header__content-navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+    .banner{
+        width:100%;
+        height: 250px;
+    }
+    .banner__contacto{
+        max-width: 100%;
+        height: 100px;
+    }
+    .banner__hosting{
+        max-width: 100%;
+        height: 100px;
+    }
+    .banner__nosotros{
+        max-width: 100%;
+        height: 100px;
+    }
+    .banner__servicios{
+        max-width: 100%;
+        height: 100px;
+    }
+}
+@media (max-width:540px){
+
+     .header__content-navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+    .header__content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+     } 
+    .header__content-navbar--menu{
+        display: flex;
+        overflow: hidden;
+        float: left;
+
+    } 
+    .banner{
+        width:100%;
+        height: 150px;
+    
+    }
+    .main__trabajos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .main__trabajos-proyectos{
+        width: 300px;
+        height: auto;
+        clear: both;
+        overflow: hidden;
+    }
+    .footer__navbar{
+        display: none;
+    }
+
+}
+@media (max-width:440px){
+
+    .main__trabajos{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .footer__navbar{
+        display: none;
+    }
+    .footer__copy{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        font-size: 12px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+    .banner__contacto{
+        max-width: 100%;
+        height: 80px;
+    }
+    .banner__hosting{
+        max-width: 100%;
+        height: 80px;
+    }
+    .banner__nosotros{
+        max-width: 100%;
+        height: 80px;
+    }
+    .banner__servicios{
+        max-width: 100%;
+        height: 80px;
+    }
+
+}

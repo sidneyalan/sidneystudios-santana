@@ -1,0 +1,45 @@
+.main__servicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 990px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+
+    .main__standar{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 990px;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+        overflow: hidden;
+    }
+
+    section{
+        margin-top: 10px;
+        margin-bottom: 10px;
+     }
+}
+.banner__servicios{
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+    clear: both;
+    display: block;
+    background-image: url("../../assets/img/banner_servicios.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nuestros_servicio ol{
+    width: 200px;
+    height: auto;
+    margin: 30px;
+    overflow: hidden;
+}

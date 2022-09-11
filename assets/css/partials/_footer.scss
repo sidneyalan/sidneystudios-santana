@@ -1,0 +1,29 @@
+footer {
+    width:100%
+}
+.footer__navbar {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+    a {
+        margin: 0 15px;
+        color: rgb(177, 177, 177);
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    :hover {
+        color: rgb(61, 61, 61);
+    }
+}
+
+.footer__copy{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 14px;
+    padding-bottom: 50px;
+}
