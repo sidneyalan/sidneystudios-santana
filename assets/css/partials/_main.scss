@@ -1,7 +1,6 @@
 .container{
     max-width: 990px;
     margin: 0 auto;
-    background-color: #f1f1f1;
     display:grid;
     grid-template-columns: 1fr; 
     overflow: hidden;
@@ -19,15 +18,15 @@
         position: sticky;
         top: 0;
         background-color: #f1f1f1;
-        padding: 30px 20px;
+        /*padding: 30px 20px;*/
         z-index: 1;
         overflow: hidden; 
     }
 
     .header__content {
         max-width: 990px;
-        display: flex;
-        justify-content:space-between;
+       /* display: flex;*/
+      /*  justify-content:space-between;*/
         overflow: hidden;
         padding: 10px;
     }
@@ -64,7 +63,7 @@
 
 .banner{
     width:100%;
-    height: 400px;
+    height: 600px;
     overflow: hidden;
     clear: both;
     background-image: url("../../assets/img/banner.jpg");
@@ -123,6 +122,12 @@
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+}
+.t-trabajos{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: $trabajos-titulos;
+    font-weight: bold;
 }
 .main__trabajos-titulo{
     font-size: 25px;

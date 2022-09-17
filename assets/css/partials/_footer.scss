@@ -1,29 +1,94 @@
-footer {
-    width:100%
-}
-.footer__navbar {
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
+// mixins
+@mixin templateGrid($columns) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: 50px;
+  }
 
-    a {
-        margin: 0 15px;
-        color: rgb(177, 177, 177);
+  @mixin templateFlex($valueJustify, $alignItems) {
+    display: flex;
+    justify-content: $valueJustify;
+  
+    @if ($alignItems == true) {
+      align-items: center;
+    }
+  }
+// utils
+
+$transition: all 0.3s;
+$shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+
+
+.footer {
+    background-color: $bgfooter;
+    color: $txt-footer;
+    padding: 60px 20px;
+    margin-top: 100px;
+  
+    // .footer
+    &__content {
+      @extend .container;
+      @include templateGrid(2);
+  
+      h4 {
+        color: $txt-footer;
+        margin-bottom: 20px;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 20px;
+      }
+  
+      // .footer__content
+      &-list {
+        li {
+          margin: 10px 0;
+        }
+  
+        a {
+          color: $txt-footer;
+          transition: $transition;
+  
+          &:hover {
+            color: $txt-footer;
+          }
+        }
+      }
     }
-
-    :hover {
-        color: rgb(61, 61, 61);
+  
+    &__rrss {
+      @include templateFlex(space-evenly, false);
+      margin-top: 30px;
+      flex-direction: column;
+  
+      // mapa
+      $iconSocialMedia: (
+        twitter: #55acee,
+        instagram: #c92d8f,
+        facebook: #2279e4,
+      );
+  
+      // ciclo - bucle
+      @each $nameSocialMedia, $txt-white in $iconSocialMedia {
+        .rs-#{$nameSocialMedia} {
+          color: $txt-footer;
+          font-size: 14px;
+          transition: $transition;
+  
+          &:hover {
+            color: $txt-white;
+          }
+        }
+      }
     }
-}
-
-.footer__copy{
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    font-size: 14px;
-    padding-bottom: 50px;
-}
+  
+    &__copy {
+      margin-top: 40px;
+      text-align: center;
+      color: #94a3b8;
+    }
+  }
+  
+  @media (max-width: $bpSmall) {
+    .footer__content {
+      grid-template-columns: 1fr;
+    }
+  }
