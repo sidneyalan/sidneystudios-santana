@@ -13,7 +13,6 @@
       align-items: center;
     }
   }
-// utils
 
 $transition: all 0.3s;
 $shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
@@ -25,7 +24,6 @@ $shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
     padding: 60px 20px;
     margin-top: 100px;
   
-    // .footer
     &__content {
       @extend .container;
       @include templateGrid(2);
@@ -37,7 +35,6 @@ $shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
         font-size: 20px;
       }
   
-      // .footer__content
       &-list {
         li {
           margin: 10px 0;
