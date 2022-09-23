@@ -71,43 +71,28 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
     <section class="formulario">
-    <h1>Formulario de contácto</h1>
-    <form action="" method="post">
-       <div class="form_content">
-        <label for="nombre">Nombre</label>
-        <input class="input" type="text" name="nombre" placeholder="Ingrese su nombre"/>
-        </div>
-        <div class="form_content">
-        <label for="telefono">Teléfono</label>
-        <input class="input" type="number" name="telefono" placeholder="Ingrese su teléfono"/>
-        </div>
+<?php
+//VARIABLES
+$nombre = isset($_POST['nombre']) ? $_POST['nombre'] : NULL;
+$telefono = isset($_POST['telefono']) ? $_POST['telefono'] : NULL;
+$mail = isset($_POST['mail']) ? $_POST['mail'] : NULL;
+$mensaje = isset($_POST['mensaje']) ? $_POST['mensaje'] : NULL;
 
-        <div class="form_content"> 
-        <label for="mail">E-Mail</label>
-        <input class="input" type="email" name="mail" placeholder="Ingrese su e-mail" />
-        </div>
+//ASUNTO
+$a = isset($_POST['a']) ? $_POST['a'] : NULL;
 
-        <div class="form_content"> 
-        <label for="Mensaje">Mensaje</label>
-        <textarea class="textarea" cols="20" name="mensaje" rows="4" placeholder="Escriba su Mensaje aqui" id="mensaje"></textarea>
-        </div>
+//CUERPO DEL MAIL
+$m = isset($_POST['m']) ? $_POST['m'] : NULL;
 
-        <div class="form_content">
-        <label style="display: block" for="conocio">¿Cómo nos conoció?</label>
-        <input type="radio" name="conocio"><span class="label">Google</span>
-        <input type="radio" name="conocio"><span class="label">Facebook</span>
-        <input type="radio" name="conocio"><span class="label">Otros</span>
-        </div>
+//ENVIO
+$a = "FORMULARIO SITIO WEB";
+$m = "Nombre: ".$nombre."\n"."Telefono: ".$telefono."\n"."E-Mail: ".$mail."\n"."Mensaje: ".$mensaje;
+mail("sidneyalan@gmail.com",$a,$m,"From: $nombre <$mail>");
 
-        <div class="acepto">
-        <input type="checkbox" name="acepto"><span class="label">Los datos ingresados son correctos </span>
-        </div>
+?>
 
-        
-        <button type="submit" id="submit">Enviar Formulario</button>
-        <button type="reset" id="reset">Borrar</button>
-        
-        </form>
+    <h1>Gracias por contactarse con nosotros</h1>
+
     </section>
   </div>
   <!--FIN FORMULARIO-->
