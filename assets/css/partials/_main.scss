@@ -10,25 +10,23 @@
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    overflow: hidden;
+
 
     .header {
-        max-width: 990px;
-        margin: 0 auto;
+        width: 100%;
         position: sticky;
         top: 0;
         background-color: #f1f1f1;
-        /*padding: 30px 20px;*/
         z-index: 1;
-        overflow: hidden; 
+    
     }
 
     .header__content {
         max-width: 990px;
        /* display: flex;*/
       /*  justify-content:space-between;*/
-        overflow: hidden;
         padding: 10px;
+        margin: 0 auto;
     }
 
     .logo{
