@@ -8,6 +8,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 60px;
 }
 .form_content{
     display: block;
@@ -25,7 +26,6 @@
     max-width: 600px;
     height: auto;
     margin: 0 auto;
-    padding-top: 60px;
     margin-bottom: 100px;
 
     h1{
@@ -42,24 +42,26 @@
     }
     .input{
         border-radius: 5px;
-        border-color:rgb(247, 245, 245);
+        border-color:rgb(240, 240, 240);
         height: 40px;
         width: 100%;
+        padding: 10px;
+        border-style: none;
     }
     .textarea{
         border-radius: 5px;
         border-color:rgb(247, 245, 245);
         height: 80px;
         width: 100%;
+        padding: 10px;
     }
     ::placeholder{
-        padding: 20px;
+        padding: 5px;
         margin-left: 20px;
         font-family: ubuntu, sans-serif;
         font-size: 14px;
 
     }
-
     #submit {
         font-weight: bold;
         cursor: pointer;

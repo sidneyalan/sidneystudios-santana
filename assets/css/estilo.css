@@ -128,16 +128,6 @@
     opacity: 100%;
   }
 }
-.cuadrado {
-  width: 20px;
-  height: 20px;
-  overflow: hidden;
-  background-color: #1a1a1a;
-  text-align: center;
-  margin: 0 auto;
-  transform: rotate(45deg); /* No hace efecto */
-}
-
 .main__trabajos {
   max-width: 990px;
   margin: 0 auto;
@@ -213,6 +203,17 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+.nav-item {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
+}
+.nav-item a {
+  color: rgb(13, 141, 66);
+}
+.nav-item a:hover {
+  border-bottom: 2px solid rgb(47, 253, 133);
 }
 
 /*ESTILOS A LA BARRA LATERAL DEL SITIO */
@@ -431,6 +432,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 60px;
 }
 
 .form_content {
@@ -448,7 +450,6 @@
   max-width: 600px;
   height: auto;
   margin: 0 auto;
-  padding-top: 60px;
   margin-bottom: 100px;
 }
 .formulario h1 {
@@ -465,30 +466,33 @@
 }
 .formulario .input {
   border-radius: 5px;
-  border-color: rgb(247, 245, 245);
+  border-color: rgb(240, 240, 240);
   height: 40px;
   width: 100%;
+  padding: 10px;
+  border-style: none;
 }
 .formulario .textarea {
   border-radius: 5px;
   border-color: rgb(247, 245, 245);
   height: 80px;
   width: 100%;
+  padding: 10px;
 }
 .formulario ::-moz-placeholder {
-  padding: 20px;
+  padding: 5px;
   margin-left: 20px;
   font-family: ubuntu, sans-serif;
   font-size: 14px;
 }
 .formulario :-ms-input-placeholder {
-  padding: 20px;
+  padding: 5px;
   margin-left: 20px;
   font-family: ubuntu, sans-serif;
   font-size: 14px;
 }
 .formulario ::placeholder {
-  padding: 20px;
+  padding: 5px;
   margin-left: 20px;
   font-family: ubuntu, sans-serif;
   font-size: 14px;
@@ -542,6 +546,7 @@
 }
 
 /* medias queries*/
+/*Relativas algunas se reemplazo por el bootstrap*/
 @media (max-width: 970px) {
   .header__content-navbar a {
     font-size: 12px;

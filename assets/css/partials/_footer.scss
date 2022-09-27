@@ -56,14 +56,14 @@ $shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
       margin-top: 30px;
       flex-direction: column;
   
-      // mapa
+      // mapa - colores de los iconos
       $iconSocialMedia: (
         twitter: #55acee,
         instagram: #c92d8f,
         facebook: #2279e4,
       );
   
-      // ciclo - bucle
+      // ciclo - bucle, recorre el mapa buscando los colores de los iconos
       @each $nameSocialMedia, $txt-white in $iconSocialMedia {
         .rs-#{$nameSocialMedia} {
           color: $txt-footer;
