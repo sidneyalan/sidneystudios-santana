@@ -541,6 +541,13 @@
   background-size: cover;
 }
 
+.img-nosotros {
+  background-image: url(/assets/img/equipo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* medias queries*/
 /*Relativas algunas se reemplazo por el bootstrap*/
 @media (max-width: 970px) {
